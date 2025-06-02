@@ -25,17 +25,6 @@ async function registerEntry(event) {
   }
 }
 
-    async function atualizarVeiculo() {
-      const oldPlate = document.getElementById('updatePlaca').value;
-      const newPlate = document.getElementById('novaPlaca').value;
-      const res = await fetch(`${API}/update/${oldPlate}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plate: newPlate })
-      });
-      const data = await res.json();
-      document.getElementById('update').textContent = JSON.stringify(data, null, 2);
-    }
 
 async function checkVehicle(event) {
   event.preventDefault();
