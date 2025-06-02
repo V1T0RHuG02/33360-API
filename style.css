@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #4A4A4A;
+  padding: 20px;
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+section {
+  background: #ffffff;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color:#000000;
+}
+
+h2 {
+  color: #000000;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px 11px;
+  margin-bottom: 15px;
+  border: 2px solid #9d9d9d;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #000000;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #1aff01;
+  outline: none;
+}
+
+button {
+  background-color: #1aff01;
+  color: #000000;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #20b000;
+}
+
+#msgEntry, #msgCheck, #msgExit, #msgCancel, #timeResult {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #4A4A4A;
+}
+
+#msgEntry.error, #msgCheck.error, #msgExit.error, #msgCancel.error {
+  color: #ff0101;
+}
+
+#msgEntry.success, #msgCheck.success, #msgExit.success, #msgCancel.success {
+  color: #1aff00;
+}
+
+pre#reportResult {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: Consolas, monospace;
+  color: #000000;
+  font-weight: 700;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  border: 3px dashed #1aff01;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E10600;
+  font-weight: 700;
+  font-size: 1.2rem;
+  user-select: none;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 5px rgba(225, 6, 0, 0.4);
+}
+

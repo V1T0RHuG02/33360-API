@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estacionamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Estacionamento</h1>
+
+    <section>
+      <h2>Registrar Entrada</h2>
+      <form id="formEntry">
+        <label for="plateEntry">Placa </label>
+        <input type="text" id="plateEntry" name="plateEntry" required />
+        
+        <label for="modelEntry">Modelo </label>
+        <input type="text" id="modelEntry" name="modelEntry" />
+        
+        <button type="submit">Registrar Entrada</button>
+      </form>
+      <div id="msgEntry" role="alert"></div>
+    </section>
+
+    <section>
+      <h2>Registrar Saída</h2>
+      <form id="formExit">
+        <label for="plateExit">Placa</label>
+        <input type="text" id="plateExit" name="plateExit" required />
+        <button type="submit">Registrar Saída</button>
+      </form>
+      <div id="msgExit" role="alert"></div>
+    </section>
+
+    <section>
+      <h2>Apagar Registro</h2>
+      <form id="formCancel">
+        <label for="plateCancel">Placa</label>
+        <input type="text" id="plateCancel" name="plateCancel" required />
+        <button type="submit">Cancelar Registro</button>
+      </form>
+      <div id="msgCancel" role="alert"></div>
+    </section>
+
+    <section>
+      <h2>Atualizar Dados </h2>
+      <form id="formEntry">
+        <label for="plateEntry">Placa Atual</label>
+        <input type="text" id="plateEntry" name="plateEntry" required />
+
+        <label for="modelEntry">Nova Placa</label>
+        <input type="text" id="modelEntry" name="modelEntry" />
+
+        <button type="submit">Atualizar</button>
+      </form>
+      <div id="msgEntry" role="alert"></div>
+    </section>
+
+    <section>
+      <h2>Verificar Veículo </h2>
+      <form id="formCheck">
+        <label for="plateCheck">Placa</label>
+        <input type="text" id="plateCheck" name="plateCheck" required />
+        <button type="submit">Verificar</button>
+      </form>
+      <div id="msgCheck" role="alert"></div>
+    </section>
+
+    <section>
+      <h2>Tempo de Permanência</h2>
+      <form id="formTime">
+        <label for="plateTime">Placa</label>
+        <input type="text" id="plateTime" name="plateTime" required />
+        <button type="submit">Verificar Tempo</button>
+      </form>
+      <div id="timeResult" aria-live="polite"></div>
+    </section>
+
+    <section>
+      <h2>Relatório Diário</h2>
+      <button id="btnReport">Verificar Relatório</button>
+      <pre id="reportResult" aria-live="polite"></pre>
+    </section>
+
+    <section>
+      <h2>Vagas Disponíveis</h2>
+      <button id="btnSlots">Verificar Vagas</button>
+      <div id="slotsResult" aria-live="polite"></div>
+    </section>
+
+    <section class="list">
+      <h2>Veículos Ativos</h2>
+      <button id="btnActiveVehicles">Verificar Veículos Ativos</button>
+      <div id="activeVehicles" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
